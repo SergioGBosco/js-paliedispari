@@ -85,6 +85,28 @@ console.log(NumberUser)
 function generatenumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-const NumberPc = generatenumbe1r(1, 5);
+const NumberPc = generatenumber(1, 5);
+
+// aggiungo variabile sum per effettuare la somma tra il numero inserito dall'utente e quello generato casualmente dal pc 
+const sum = NumberPc + NumberUser
 
 console.log(NumberPc)
+console.log(sum)
+
+//Aggiungo la condizione da verificare attraverso la funzione
+let result = (``);
+
+
+if (sum % 2 === 0) {
+  result = (`Pari`)
+}
+else {
+  result = (`Dispari`)
+}
+
+if (result === evenodd) {
+  console.log(`Hai Vinto!`)
+}
+else {
+  console.log(`Hai Perso, Riprova`)
+}
