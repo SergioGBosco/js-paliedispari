@@ -46,23 +46,36 @@
 
 // reverse(wordcheck);
 
+//Metodo Due Semplificato 
 
-let result = (``)
-function reverse(word) {
+// let result = (``)
+// function reverse(word) {
 
-  for (i = word.length - 1; i >= 0; i--) {
-    result += word[i];
-  }
-  console.log(result)
+//   for (i = word.length - 1; i >= 0; i--) {
+//     result += word[i];
+//   }
+//   console.log(result)
 
-  if (word === result) {
-    console.log(`La parola è Palindroma`)
-  }
-  else {
-    console.log(`La parola non è palindroma`)
-  }
-}
+//   if (word === result) {
+//     console.log(`La parola è Palindroma`)
+//   }
+//   else {
+//     console.log(`La parola non è palindroma`)
+//   }
+// }
 
-const reverseword = prompt(`Scrivi una parola per vederla al contrario `)
+// const reverseword = prompt(`Scrivi una parola per vederla al contrario `)
 
-reverse(reverseword);
+// reverse(reverseword);
+
+
+//Esercizio pari o dispari 
+//Aggiungo una variabile per determinare il vincitore del gioco
+let evenodd = prompt(`Pronostica il risultato, Pari o Dispari, per determinare il vincitore`);
+
+//aggiungo una variabile in cui all'interno viene inserire un numero casuale da 1 a 5
+
+const NumberUser = parseInt(prompt(`Inserisci un Numero compreso da 1 a 5`))
+
+console.log(evenodd)
+console.log(NumberUser)
