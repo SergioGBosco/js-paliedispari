@@ -24,11 +24,24 @@ function reverse(word) {
 
   console.log(reversewordcheck)
 
+  //una volta che la parola inserita e la sua versione al contrario sono sotto forma di unica stringa metto la condizione da verificare 
 
-  // Creo una variabile "wordcheck" che permette all'utente di inserire un parola
+  // Aggiungo la condizione da verificare 
 
-  const wordcheck = prompt(`Inserisci la parola che vuoi Controllare `)
+  if (word === reversewordcheck) {
+    console.log(`La Parola Scelta è Palindroma`)
+  }
 
-  //Chiamo la funzione 
+  else {
+    console.log(`La Parola Scelta non è palindroma `)
+  }
 
-  reverse(wordcheck);
+}
+
+// Creo una variabile "wordcheck" che permette all'utente di inserire un parola
+
+const wordcheck = prompt(`Inserisci la parola che vuoi Controllare `)
+
+//Chiamo la funzione 
+
+reverse(wordcheck);
