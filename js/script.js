@@ -96,17 +96,20 @@ console.log(sum)
 //Aggiungo la condizione da verificare attraverso la funzione
 let result = (``);
 
+function evenorodd(number) {
+  if (number % 2 === 0) {
+    result = (`Pari`)
+  }
+  else {
+    result = (`Dispari`)
+  }
 
-if (sum % 2 === 0) {
-  result = (`Pari`)
-}
-else {
-  result = (`Dispari`)
+  if (result === evenodd) {
+    console.log(`Hai Vinto!`)
+  }
+  else {
+    console.log(`Hai Perso, Riprova`)
+  }
 }
 
-if (result === evenodd) {
-  console.log(`Hai Vinto!`)
-}
-else {
-  console.log(`Hai Perso, Riprova`)
-}
+evenorodd(sum)
