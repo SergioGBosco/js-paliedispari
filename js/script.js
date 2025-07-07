@@ -73,9 +73,18 @@
 //Aggiungo una variabile per determinare il vincitore del gioco
 let evenodd = prompt(`Pronostica il risultato, Pari o Dispari, per determinare il vincitore`);
 
-//aggiungo una variabile in cui all'interno viene inserire un numero casuale da 1 a 5
+// //aggiungo una variabile in cui all'interno viene inserire un numero casuale da 1 a 5
 
 const NumberUser = parseInt(prompt(`Inserisci un Numero compreso da 1 a 5`))
 
 console.log(evenodd)
 console.log(NumberUser)
+
+//Creo una funzione per generare un numero random per il pc da 1 a 5 
+
+function generatenumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+const NumberPc = generatenumbe1r(1, 5);
+
+console.log(NumberPc)
